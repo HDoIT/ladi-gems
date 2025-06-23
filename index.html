@@ -4,377 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuyển Dụng CTV đá thạch anh rải nền rải móng AN PHÁT  - Đăng Ký Ngay </title>
+    <meta name="description" content="Đăng ký làm CTV đá thạch anh An Phát - Thu nhập hấp dẫn, hỗ trợ 24/7, đào tạo miễn phí. Ưu đãi lên đến 20% cho đăng ký sớm!">
+    <meta name="keywords" content="CTV đá thạch anh, rải nền, rải móng, kinh doanh vật liệu xây dựng, đăng ký đại lý">
+    <meta property="og:title" content="Tuyển Dụng CTV đá thạch anh AN PHÁT">
+    <meta property="og:description" content="Cơ hội hợp tác kinh doanh với thu nhập không giới hạn">
+    <meta property="og:image" content="/images/AN PHÁT 1/1.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
-    <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;        }
-        
-        body {
-            background-color: #f5f5f5;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #FF9999, #ffd700);
-            color: white;
-            padding: 25px 15px;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            z-index: 50;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-            animation: headerFadeIn 1s ease-out;
-        }
-        
-        @keyframes headerFadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .header h1 {
-            font-size: 26px;
-            margin-bottom: 12px;
-            font-weight: 800;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-        }
-        
-        .header p {
-            font-size: 16px;
-            opacity: 0.95;
-            line-height: 1.5;
-            max-width: 90%;
-            margin: 0 auto;
-        }
-
-        .register-btn {
-            display: inline-block;
-            background: white;
-            color: #FF9999;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 16px;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            animation: pulse 2s infinite;
-            border: none;
-            cursor: pointer;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-            }
-            70% {
-                transform: scale(1.05);
-                box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-            }
-        }
-        
-        .register-btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        .register-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: 0.5s;
-        }
-        
-        .register-btn:hover::before {
-            left: 100%;
-        }
-        
-        /* Image Gallery */
-        .image-gallery {
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 180px;
-        }
-        
-        .gallery-item {
-            width: 100%;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: itemFadeIn 0.6s forwards;
-        }
-        
-        @keyframes itemFadeIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .gallery-item:nth-child(1) { animation-delay: 0.2s; }
-        .gallery-item:nth-child(2) { animation-delay: 0.4s; }
-        .gallery-item:nth-child(3) { animation-delay: 0.6s; }
-        .gallery-item:nth-child(4) { animation-delay: 0.8s; }
-        
-        .gallery-item:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-        
-        /* Contact Form */
-        .contact-form {
-            background: white;
-            padding: 20px;
-            margin: 20px 15px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            animation: formFadeIn 0.8s ease-out;
-            animation-delay: 0.5s;
-            animation-fill-mode: both;
-        }
-        
-        @keyframes formFadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .form-title {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #FF9999;
-            font-size: 20px;
-            font-weight: 700;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #555;
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: #ff9966;
-            box-shadow: 0 0 0 3px rgba(255, 153, 102, 0.2);
-            outline: none;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(135deg, #FF9999, #ff9966);
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            width: 100%;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(255, 94, 98, 0.3);
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(255, 94, 98, 0.4);
-        }
-        
-        /* Footer */
-        .footer {
-            background: linear-gradient(135deg, #333, #555);
-            color: white;
-            padding: 25px 15px;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
-            z-index: 50;
-            animation: footerSlideUp 0.8s ease-out;
-        }
-        
-        @keyframes footerSlideUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
-        
-        .footer h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .footer p {
-            font-size: 14px;
-            opacity: 0.9;
-            line-height: 1.4;
-            margin-bottom: 15px;
-        }
-        
-        .footer-contact {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .footer-contact a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            padding: 5px 10px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .footer-contact a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
-        
-        /* Fixed CTA Buttons */
-        .cta-container {
-            position: fixed;
-            bottom: 90px;
-            right: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 100;
-        }
-        
-        .cta-button {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 26px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            text-decoration: none;
-            position: relative;
-            overflow: hidden;
-            animation: ctaBounce 2s infinite;
-        }
-        
-        @keyframes ctaBounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .cta-button.hotline {
-            background-color: #d34825;
-            animation-delay: 0.2s;
-        }
-        
-        .cta-button.zalo {
-            background-color: #d34825;
-            animation-delay: 0.4s;
-        }
-        
-        .cta-button::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            opacity: 0;
-            transition: all 0.3s ease;
-        }
-        
-        .cta-button:hover::after {
-            opacity: 1;
-            transform: scale(1.5);
-        }
-        
-        .cta-button:hover {
-            transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Responsive */
-        @media (min-width: 768px) {
-            body {
-                max-width: 414px;
-                margin: 0 auto;
-                border-left: 1px solid #ddd;
-                border-right: 1px solid #ddd;
-                min-height: 100vh;
-                position: relative;
-            }
-            
-            .footer {
-                max-width: 414px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .header {
-                max-width: 414px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Header Quảng Cáo -->
     <header class="header">
         <h1>ĐĂNG KÝ ĐỂ TRỞ THÀNH CỘNG TÁC VIÊN CỦA CHÚNG TÔI</h1>
-        <!-- <p>Thu nhập không giới hạn - Làm việc linh hoạt - Hỗ trợ tận tình 24/7</p> -->
         <button class="register-btn" id="registerBtn">ĐĂNG KÝ NGAY</button>
 
     </header>
     
-    <!-- Image Gallery -->
     <div class="image-gallery">
         <div class="gallery-item">
             <img src="/images/AN PHÁT 1/1.jpg" alt="Ưu đãi CTV">
@@ -415,7 +60,6 @@
         
     </div>
     
-    <!-- Contact Form -->
     <div class="contact-form" id="contactFormSection">
         <h2 class="form-title">ĐĂNG KÝ TƯ VẤN NGAY</h2>
         <h4 style="border: 1px solid black; background-color: #FF9999; margin-bottom: 10px; border-radius: 10px;text-align: center; color: #f5f5f5;"  >Đăng kí ngay để nhận ưu đãi đến 20%</h4>
@@ -432,16 +76,6 @@
                 <label for="email">Email (Bắt buộc)</label>
                 <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
             </div>
-            <!-- <div class="form-group">
-                <label for="interest">Bạn quan tâm đến</label>
-                <select id="interest" name="interest">
-                    <option value="">Chọn lĩnh vực quan tâm</option>
-                    <option value="sales">Bán hàng online</option>
-                    <option value="marketing">Tiếp thị liên kết</option>
-                    <option value="partner">Đối tác phân phối</option>
-                    <option value="other">Khác</option>
-                </select>
-            </div> -->
             <div class="form-group">
                 <label for="message">Lời nhắn (nếu có)</label>
                 <textarea id="message" name="message" rows="3" placeholder="Nhập lời nhắn của bạn"></textarea>
@@ -452,17 +86,15 @@
     <div class="gallery-item" >
         <img src="/images/AN PHÁT 1/20.jpg" alt="Hỗ trợ 24/7" style="border-radius: 0px !important;">
     </div>
-    <!-- Fixed CTA Buttons -->
     <div class="cta-container">
         <a href="tel:0982627166" class="cta-button hotline" title="Gọi ngay">
             📞
         </a>
         <a href="https://zalo.me/0982627166" target="_blank" class="cta-button zalo" title="Nhắn tin Zalo">
-            💬
+            <img src="/images/icon/zalo_sharelogo.png" alt="" srcset="" style="background-size: contain; height: 50px;">
         </a>
     </div>
     
-    <!-- Footer -->
     <footer class="footer">
         <h3>CƠ HỘI KINH DOANH</h3>
         <p>Đăng ký ngay hôm nay để nhận ưu đãi đặc biệt</p>
@@ -475,82 +107,6 @@
         <p >Địa chỉ: 60/69 Bùi Huy Bích, Hoàng Mai, Hà Nội</p>
     </footer>
 
-    <script>
-        // Đảm bảo DOM đã load xong trước khi thực thi JavaScript
-        document.addEventListener('DOMContentLoaded', function() {
-            // Lấy nút đăng ký và phần form
-            const registerBtn = document.getElementById('registerBtn');
-            const formSection = document.getElementById('contactFormSection');
-            
-            // Kiểm tra nếu các phần tử tồn tại trước khi thêm event listener
-            if (registerBtn && formSection) {
-                // Smooth scroll to form when register button is clicked
-                registerBtn.addEventListener('click', function() {
-                    formSection.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Add highlight animation to form
-                    formSection.style.animation = 'none';
-                    formSection.offsetHeight; /* trigger reflow */
-                    formSection.style.animation = 'formFadeIn 0.8s ease-out';
-                    
-                    // Add temporary highlight effect
-                    formSection.style.boxShadow = '0 0 0 5px rgba(255, 153, 102, 0.5)';
-                    setTimeout(() => {
-                        formSection.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
-                    }, 1000);
-                });
-            } else {
-                console.error('Không tìm thấy phần tử cần thiết');
-            }
-    
-            // Form submission handling
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form values
-                    const name = document.getElementById('name').value;
-                    const phone = document.getElementById('phone').value;
-                    
-                    // Here you would typically send this data to a server
-                    // For demo, we'll just show an alert
-                    alert(`Cảm ơn ${name} đã đăng ký!\nChúng tôi sẽ liên hệ với bạn qua số ${phone} sớm nhất.`);
-                    
-                    // Reset form
-                    this.reset();
-                    
-                    // Scroll to top to show a confirmation message
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
-        });
-    </script>
-    <!-- <script>
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const interest = document.getElementById('interest').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send this data to a server
-            // For demo, we'll just show an alert
-            alert(`Cảm ơn ${name} đã đăng ký!\nChúng tôi sẽ liên hệ với bạn qua số ${phone} sớm nhất.`);
-            
-            // Reset form
-            this.reset();
-            
-            // Optional: Scroll to top to show a confirmation message
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script> -->
+   <script src="/js/main.js"></script>
 </body>
 </html>
